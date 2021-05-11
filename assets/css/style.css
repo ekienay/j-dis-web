@@ -1,0 +1,508 @@
+﻿body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: url("../images/intro.jpg") no-repeat center center fixed;
+    margin-bottom: 100px;
+    -webkit-background-size: cover;
+    background-size:100%
+    background-position: top center bottom;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+    height: 100%;
+}
+@font-face {
+
+font-family: GoodDog New; /* Имя шрифта */
+
+src: url(assets\fonts\18341.ttf); /* Путь к файлу со шрифтом */
+
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+
+/* Container */
+.container {
+    border:20px solid rgba(0, 139, 139, 0.01);
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Intro */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 100%;
+    min-height: 150vh;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.intro__title {
+    color: #fff;
+    font-size: 150px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.intro__title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 60px auto;
+
+    background-color: #fff;
+}
+
+.intro__suptitle {
+    margin-top:1px;
+
+    font-family: 'Kaushan Script', cursive;
+    font-size: 72px;
+    color: #fff;
+}
+
+
+/* Header */
+.header {
+    width: 100%;
+    padding-top: 30px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    margin-left: 5%;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+
+/* Nav */
+.nav {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+
+    color: #fff;
+    text-decoration: none;
+
+    transition: color .1s linear;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #008080;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+
+.nav__link:hover {
+    color: #008080;
+}
+
+.nav__link:hover:after,
+.nav__link.active:after{
+    opacity: 1;
+}
+
+
+/* Button */
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+
+    border: 3px solid #fff;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background .1s linear, color .1s linear;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #333;
+}
+.contant{
+    padding-bottom: 90px;
+    flex: 1 0 auto;
+}
+.footer{
+    position: absolute;
+    flex:10 0 auto;
+    z-index: 10;
+    width: 100%;
+    padding: 15px;
+    background-color:rgba(105, 105, 105,0.1);
+    margin-top: 100%;
+    margin-bottom: 0%;
+}
+
+.footer-content {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -webkit-filter: sepia(100%) saturate(10%) hue-rotate(190deg) brightness(130%);
+    filter: sepia(100%) saturate(10%) hue-rotate(190deg) brightness(130%);
+    text-align: center;
+}
+.default-footer-email {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+}
+.default-footer-con {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: Verdana;
+    color: #616060;
+    text-transform: uppercase;
+    display:inline-block;
+}
+.default-footer-email-content {
+    font-size: 18px;
+    color: #bfbfbf;
+}
+.w{
+    position: relative;
+    margin-left:3%;
+    margin-right: 3%;
+    border:20px solid rgba(3, 3, 3, 0.01);
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    color: #000;
+    transition: background .6s linear, color .6s linear;
+    width: 60%;
+
+}
+.w:hover{
+    background-color: #000;
+}
+.about{
+    font-size:15px;
+    float-left:25%;
+    color:white;
+    text-align: center;
+    font-family: Bahnschrift,cursive;
+
+}
+.text1{
+    font-family: 'Kaushan Script';
+    font-size: 72px;
+    color: #fff;
+    text-align: center;
+    margin:90px;
+}
+.bull{
+    display:inline-block;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-left:18.5%;
+    padding-right:18.5%;
+    height: auto;
+    overflow: visible;
+}
+.slider-content{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.videocontent{
+    position: relative;
+    display:inline-block;
+    margin-top:2%;
+    margin-bottom: 20%;
+    margin-left: 7%;
+    float: left;
+
+}
+.text3{
+    position: relative;
+    font-family: 'Kaushan Script';
+    font-size: 20px;
+    color:#fff;
+    margin-bottom:70px;
+}
+.aboutgalaxy{
+    position: relative;
+    font-size: 15px;
+    color:#fff;
+    margin-top:7%;
+    text-align: center;
+    text-align: justify;
+    margin-right: 7%;
+    margin-left: 50%;
+    padding-left: 10%;
+}
+.text4-tub{
+    text-indent: 2em;
+}
+.vidcon{
+    position: absolute;
+    border:20px solid rgba(0, 139, 139, 0.01);
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    color: #333;
+    margin-top: 10%;
+    height: auto;
+    margin-left: 3%;
+    margin-right: 3%;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+
+}
+img{
+    border-radius: 30px;
+}
+.galaxy-con{
+    padding-left: 30px;
+    justify-content: center;
+    padding: 6%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border:20px solid rgba(0, 139, 139, 0.01);
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    overflow: hidden;
+    height: auto;
+}
+
+#scrollUp {
+    position: fixed;
+    border: 1px solid #20B2AA;
+    background-color:rgba(105, 105, 105,0.1);
+    height: 90px;
+    width: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    top: 65%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 20px
+}
+
+
+.Up{
+    padding-top: 25px;
+    text-decoration: none;
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+.about1{
+    font-family: 'Kaushan Script';
+    font-size: 72px;
+    color: #fff;
+    text-align: center;
+    margin:90px;
+}
+.about2{
+    position: relative;
+    font-size: 15px;
+    color:#fff;
+    text-align: center;
+}
+.aboutpg{
+    position: absolute;
+    border:20px solid rgba(0, 139, 139, 0.01);
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    color: #333;
+    height:100%;
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
+    margin:25% 25% 25% 25%;
+    top:80%;
+}
+.contacts1{
+    position: relative;
+    font-family: 'Kaushan Script';
+    font-size: 72px;
+    color: #fff;
+    text-align: center;
+    margin:90px;
+}
+.contacts2{
+    position: relative;
+    font-size: 15px;
+    color:#fff;
+    text-align: center;
+}
+.contacts{
+    position: absolute;
+    border:20px solid rgba(0, 139, 139, 0.01);
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    color: #333;
+    width: 50%;
+    margin:25% 25% 25% 25%;
+    top:80%;
+    justify-content: center;
+    text-align: center;
+    padding: 3%;
+}
+.service1{
+    position: absolute;
+    border:20px solid rgba(0, 139, 139, 0.01);
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    color: #333;
+    width: 50%;
+    margin:25% 25% 25% 25%;
+    top:80%;
+    justify-content: center;
+    text-align: center;
+    padding: 3%;
+}
+.service2{
+position: relative;
+    font-family: 'Kaushan Script';
+    font-size: 72px;
+    color: #fff;
+    text-align: center;
+    margin:50px;
+}
+.service3{
+    position: relative;
+    font-size: 15px;
+    color:#fff;
+    text-align: center;
+}
+.blog1{
+    position: absolute;
+    border:20px solid rgba(0, 139, 139, 0.01);
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    color: #333;
+    width: auto;
+    height: auto;
+    margin: 25% 25% 25% 25%;
+    top: 80%;
+    justify-content: center;
+    text-align: center;
+    padding: 4%;
+}
+.blog2{
+    position: relative;
+    font-family: 'Kaushan Script';
+    font-size: 72px;
+    color: #fff;
+    text-align: center;
+}
+.blog3{
+    position: relative;
+    font-size: 15px;
+    color:#fff;
+    text-align: center;
+    float:left;
+}
+.ver4{
+    position: relative;
+    font-family: 'Kaushan Script';
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+.work2{
+    font-family: 'Kaushan Script';
+    font-size: 72px;
+    color: #fff;
+    text-align: center;
+    margin:90px;
+}
+.work3{
+    position: relative;
+    font-size: 15px;
+    color:#fff;
+    text-align: center;
+}
+.work1{
+    position: absolute;
+    border:20px solid rgba(0, 139, 139, 0.01);
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    color: #333;
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
+    margin:25% 25% 25% 25%;
+    top:80%;
+}
+
+#con {
+    display: none;
+}
+
+
+.link1{
+    color:#fff;
+}
+
+
+.blog4 {
+  position: relative;
+  margin-left: 5%;
+  margin-right: 5%;
+}
